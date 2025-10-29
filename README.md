@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 4. Configure Database
 Update settings.py with your MariaDB credentials:
-```bash
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
