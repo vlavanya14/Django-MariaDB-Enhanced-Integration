@@ -32,7 +32,7 @@ This prototype illustrates how modern applications can leverage MariaDB’s enha
 2. Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate    # Windows
-# or
+or
 source venv/bin/activate # macOS/Linux
 
 
@@ -42,6 +42,7 @@ pip install -r requirements.txt
 
 4. Configure Database
 Update settings.py with your MariaDB credentials:
+```bash
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -54,15 +55,15 @@ DATABASES = {
 }
 
 
-5. Apply Migrations
+6. Apply Migrations
 python manage.py migrate
 
 
-6. Create Demo Data
+7. Create Demo Data
 python manage.py create_demo_data
 
 
-7. Run Server
+8. Run Server
 python manage.py runserver
 
 
@@ -88,7 +89,7 @@ python manage.py shell
 
 
 Example commands:
-
+```bash
 from blog_demo.models import Post, UserProfile
 
 posts = Post.objects.all()
@@ -133,10 +134,10 @@ pip install mysqlclient
 If MariaDB won’t connect:
 
 mysql -u root -p
-# If fails:
-# Windows: net start MySQL
-# macOS: brew services start mariadb
-# Linux: sudo systemctl start mariadb
+If fails:
+Windows: net start MySQL
+macOS: brew services start mariadb
+Linux: sudo systemctl start mariadb
 
 
 
