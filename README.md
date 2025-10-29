@@ -72,7 +72,7 @@ Visit: http://127.0.0.1:8000/
 ## Testing
 
 Run all tests:
-python manage.py test
+```bash python manage.py test
 
 
 Run a specific test:
