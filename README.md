@@ -89,7 +89,6 @@ python manage.py shell
 
 
 Example commands:
-```bash
 from blog_demo.models import Post, UserProfile
 
 posts = Post.objects.all()
@@ -105,6 +104,7 @@ user = UserProfile.objects.first()
 if user:
     for post in user.get_recommendations(limit=5):
         print(post.title)
+
 
 
 
