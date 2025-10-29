@@ -71,19 +71,23 @@ Visit: http://127.0.0.1:8000/
 
 ## Testing
 
-Run all tests:
-```bash python manage.py test
+# Run all tests:
+
+python manage.py test
 
 
-Run a specific test:
+# Run a specific test:
+
 python manage.py test blog_demo.tests.VectorFieldTestCase
 
 
-Run with detailed output:
+# Run with detailed output: 
+
 python manage.py test --verbosity=2
 
 
-To interactively test in the Django shell:
+# To interactively test in the Django shell:      
+
 python manage.py shell
 
 
